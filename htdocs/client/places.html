@@ -20,6 +20,13 @@
         }
     </style>
 
+    <script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
+    <style type="text/css">
+        #YMapsID {
+            width: auto;
+            height: 300px;
+        }
+    </style>
 </head>
 <body style="padding: 1em;">
     <nav class="navbar navbar-inverse" role="navigation">
@@ -69,30 +76,33 @@
     <div class="content">
         <div class="col-md-4">
             <ul class="nav nav-pills">
-                <li class="active"><a href="#">Рекомендуют</a></li>
-                <li><a href="#">Пончики</a></li>
-                <li><a href="#">Десерты</a></li>
-                <li><a href="#">Напитки</a></li>
-                <li><a href="#">Выгодные предложения</a></li>
-                <li><a href="#">Сезонные предложения</a></li>
+                <li class="active"><a href="#">Рядом</a></li>
+                <li><a href="#">Рекомендуют</a></li>
                 <li><a href="#">Испытаны</a></li>
             </ul>
             <hr>
+            <div class="hidden-xs">
+                <div id="YMapsID"></div>
+            </div>
         </div>
 
 
         <div class="col-md-8">
         <div list-group>
-            <a class="list-group-item" href="#">
+            <a class="list-group-item" href="dishes.html">
                 <div class="media">
                     <img class="media-object pull-left img-thumbnail" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII=" style="width: 64px; height: 64px; margin-right: 10px">
                     <div class="media-body">
-                        <h4 class="media-heading">Лате</h4>
+                        <h4 class="media-heading">Krispy Cream</h4>
+                        <p>Donuts and Coffee</p>
                     </div>
                     <div class="media-body addition">
                         <span class="label label-success">8.9</span>
-                        <span class="glyphicon glyphicon-gbp"> </span> 175
-                        <span class="glyphicon glyphicon-time"> </span> 3m
+                        300m
+                        <span class="glyphicon glyphicon-map-marker"> </span>
+                        ул. Никольская, 4/5
+                        <span class="glyphicon glyphicon-credit-card">  </span>
+                        <span class="glyphicon glyphicon-star"></span>
                     </div>
                 </div>
                 </a>
@@ -100,14 +110,15 @@
                 <div class="media">
                     <img class="media-object pull-left img-thumbnail" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII=" style="width: 64px; height: 64px; margin-right: 10px">
                     <div class="media-body">
-                        <h4 class="media-heading">Капучино</h4>
+                        <h4 class="media-heading">Dunkin Donuts</h4>
                         <p>Super donuts, 1.1km</p>
                     </div>
                     <div class="media-body addition">
-                        <span class="label label-success">8.9</span>
-                        <span class="glyphicon glyphicon-gbp"> </span> 175
-                        <span class="glyphicon glyphicon-time"> </span> 6m
-                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="label label-success">7.4</span>
+                        <span class="glyphicon glyphicon-map-marker"> </span>
+                        Ладожская ул., 5
+                        <span class="glyphicon glyphicon-star-empty"> </span>
+                        <span class="glyphicon glyphicon-shopping-cart">  </span>
                     </div>
                 </div>
             </a>
@@ -115,12 +126,13 @@
                 <div class="media">
                     <img class="media-object pull-left img-thumbnail" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII=" style="width: 64px; height: 64px; margin-right: 10px">
                     <div class="media-body">
-                        <h4 class="media-heading">Американо</h4>
+                        <h4 class="media-heading">Il Patio</h4>
+                        <p>Pizza, 1.5km</p>
                     </div>
                     <div class="media-body addition">
-                        <span class="label label-success">8.9</span>
-                        <span class="glyphicon glyphicon-gbp"> </span> 140
-                        <span class="glyphicon glyphicon-time"> </span> 2m
+                        <span class="label label-default">5.5</span>
+                        <span class="glyphicon glyphicon-minus-sign"> </span>
+                        Закрыто
                     </div>
                 </div>
             </a>
@@ -128,12 +140,13 @@
                 <div class="media">
                     <img class="media-object pull-left img-thumbnail" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII=" style="width: 64px; height: 64px; margin-right: 10px">
                     <div class="media-body">
-                        <h4 class="media-heading">Эспрессо</h4>
+                        <h4 class="media-heading">Friends Forever</h4>
+                        <p>Кафе и Чайная, 2km</p>
                     </div>
                     <div class="media-body addition">
-                        <span class="label label-success">8.9</span>
-                        <span class="glyphicon glyphicon-gbp"> </span> 100
-                        <span class="glyphicon glyphicon-time"> </span> 2m
+                        <span class="label label-default">5.5</span>
+                        <span class="glyphicon glyphicon-map-marker"> </span>
+                        Бол. Козихинский пер., 18
                     </div>
                 </div>
             </a>
@@ -145,5 +158,37 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        ymaps.ready(function () {
+            var myMap,
+                defaultMapOptions = {
+                    center: [55.751574, 37.573856],
+                    zoom: 9
+                },
+                createMap = function (options) {
+                    return new ymaps.Map('YMapsID', options);
+                },
+                onSuccess = function (res) {
+                    var geoObject = res.geoObjects.get(0),
+                            mapOptions = geoObject && { bounds: geoObject.properties.get('boundedBy') };
+
+                    myMap = createMap(mapOptions || defaultMapOptions);
+
+                    if(geoObject) {
+                        myMap.geoObjects.add(geoObject);
+                    }
+                },
+                onFail = function (err) {
+                    if(console) {
+                        console.log(err);
+                    }
+                    myMap = createMap(defaultMapOptions);
+                };
+
+            ymaps.geolocation.get({ autoReverseGeocode: true })
+                    .then(onSuccess, onFail);
+        });
+    </script>
 </body>
 </html>
