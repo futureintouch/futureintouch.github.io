@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <style type="text/css">
+        form input {
+            max-width: 15em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="places.html">FutureInTouch</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="places.html">Заведения</a></li>
+                <li class="active"><a href="account.html">Аккаунт</a></li>
+            </ul>
+
+            <div class="col-sm-4 col-md-4">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="hidden-md hidden-lg"><i class="glyphicon glyphicon-search"></i></span>
+                                <span class="hidden-xs hidden-sm">Поиск</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a href="#">Уведомления</a></li>
+                <li><a href="#">Помощь</a></li>
+            </ul>
+            <div class="pull-right">
+                <a href="signin.html" class="btn btn-default navbar-btn">Выйти</a>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="span4 well">
+        <ul class="list-inline">
+            <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Fureev Andrew</a></li>
+            <li><span class="glyphicon glyphicon-star"></span> <a href="#">Избранные</a></li>
+            <a href="#" class="pull-right"><span class="label label-success">12.53$</span></a> <!-- payment history -->
+        </ul>
+    </div>
+
+    <!--<div class="col-md-8">-->
+    <div class="span4 well">
+        <div class="list-group">
+            <div class="list-group-item">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="list-group-item-header">
+                                <h4><a  href="orders/view.html">#MN342</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="list-group-item-header">
+                                <span class="label label-default pull-right"> hold </span>
+                                <h4>Dunkin Donuts</h4>
+                            </div>
+                            <div class="list-group-item-text">
+                                <div class="">
+                                    <span class="glyphicon glyphicon-time"> </span> 10:30, завтра
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer" style="color: #b94a48; background-color: #f2dede; border-color: #eed3d7;">
+                    <h3 class="panel-title">Оплата наличными: <span class="pull-right"> 150 руб.</span></h3>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="list-group-item-header">
+                                <h4><a  href="orders/view.html">#YF381</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="list-group-item-header">
+                                <span class="label label-default pull-right"> wait </span>
+                                <h4>Krispy Creame</h4>
+                            </div>
+                            <div class="list-group-item-text">
+                                <div class="">
+                                    <span class="glyphicon glyphicon-time"> </span> 17:20, сегодня
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer" style="color: #3a87ad; background-color: #d9edf7; border-color: #bce8f1;">
+                    <h3 class="panel-title">Оплата картой: <span class="pull-right"> 275 руб.</span></h3>
+                </div>
+            </div>
+        </div><br>
+        <p class="text-center"><a class="btn btn-info" href="orders/list.html">Все заказы >>></a></p>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
