@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FIT: Operator</title>
+    <title>FIT</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,20 +31,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="places.html">FutureInTouch</a>
+            <a class="navbar-brand" href="../places.html">FutureInTouch</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="places.html">Заведения</a></li>
+                <li class="active"><a href="../places.html">Заведения</a></li>
                 <li><a href="#">Аккаунт</a></li>
             </ul>
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-md-4">
                 <form class="navbar-form navbar-left" role="search">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="Активные заказы">
                         <div class="input-group-btn">
                             <button class="btn btn-default" type="submit">
                                 <span class="hidden-md hidden-lg"><i class="glyphicon glyphicon-search"></i></span>
@@ -60,79 +60,62 @@
                 <li><a href="#">Помощь</a></li>
             </ul>
             <div class="pull-right">
-                <a href="signin.html" class="btn btn-default navbar-btn">Выйти</a>
+                <a href="../signin.html" class="btn btn-default navbar-btn">Выйти</a>
             </div>
         </div><!-- /.navbar-collapse -->
     </nav>
 
-        <div class="col-sm-6 col-sm-offset-3">
-            <form class="form-horizontal">
-                <fieldset>
-                    <legend>Добавить карту</legend>
 
-                    <div class="form-group">
-                        <label class="control-label">Название карты</label>
-                        <div class="controls">
-                            <input type="text" class="form-control" pattern="\w+" title="Fill your first and last name" required="">
+    <div class="content">
+        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+           <div class="container">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="list-group-item-header">
+                                <h3>#3486</h3>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label">Владелец карты</label>
-                        <div class="controls">
-                            <input type="text" class="form-control" pattern="\w+ \w+.*" title="Fill your first and last name" required="">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label">Номер карты</label>
-                        <div class="controls">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <input type="text" class="form-control" autocomplete="off" maxlength="4" pattern="\d{4}" title="First four digits" required="">
-                                </div>
-                                <div class="col-sm-3">
-                                    <input type="text" class="form-control" autocomplete="off" maxlength="4" pattern="\d{4}" title="Second four digits" required="">
-                                </div>
-                                <div class="col-sm-3">
-                                    <input type="text" class="form-control" autocomplete="off" maxlength="4" pattern="\d{4}" title="Third four digits" required="">
-                                </div>
-                                <div class="col-sm-3">
-                                    <input type="text" class="form-control" autocomplete="off" maxlength="4" pattern="\d{4}" title="Fourth four digits" required="">
+                        <div class="col-xs-8">
+                            <div class="list-group-item-header">
+                                <span class="label label-info pull-right"> visa </span>
+                                <h4 class="">Visa Classic Sochi 2014</h4>
+                            </div>
+                            <div class="list-group-item-text">
+                                <div class="">
+                                    <span class="glyphicon glyphicon-credit-card"> </span> 4226 31** **** 3486
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <label class="control-label">Дата окончания</label>
-                        <div class="controls">
-                            <div class="row">
-                                <div class="col-sm-9">
-                                    <select class="form-control">
-                                        <option>Январь</option>
-                                        <option>...</option>
-                                        <option>Декабрь</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-3">
-                                    <select class="form-control">
-                                        <option>2013</option>
-                                        <option>...</option>
-                                        <option>2015</option>
-                                    </select>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-body">
+                                    <h4>
+                                        Недавние операции
+                                    </h4>
+                                    <ol>
+                                        <li>
+                                            <span class="pull-right"><span class="glyphicon glyphicon-gbp"> </span> 150</span>
+                                            Krispy Cream
+                                        </li>
+                                        <li>
+                                            <span class="pull-right"><span class="glyphicon glyphicon-gbp"> </span> 125</span>
+                                            Dunkin Donuts
+                                        </li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Сохранить</button>
-                        <a href="#" class="">Отменить</a>
+                    <div class="row">
+                            <button type="button" class="btn btn-default">Скрыть</button>
+                        <button type="button" class="btn btn-danger pull-right">Отключить</button>
                     </div>
-                </fieldset>
-            </form>
+                </div>
         </div>
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery.js"></script>
