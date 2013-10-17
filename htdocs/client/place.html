@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FIT</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
+</head>
+<body style="padding: 1em;">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="places.html">FutureInTouch</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="places.html">Заведения</a></li>
+                <li><a href="account.html">Аккаунт</a></li>
+            </ul>
+
+            <div class="col-sm-4 col-md-4">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Кафе">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="hidden-md hidden-lg"><i class="glyphicon glyphicon-search"></i></span>
+                                <span class="hidden-xs hidden-sm">Поиск</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a href="#">Уведомления</a></li>
+                <li><a href="#">Помощь</a></li>
+            </ul>
+            <div class="pull-right">
+                <a href="signin.html" class="btn btn-default navbar-btn">Выйти</a>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="content">
+        <div>
+            <div class="media">
+                <img class="media-object pull-left img-thumbnail" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII=" style="width: 64px; height: 64px; margin-right: 10px">
+                <div class="media-body">
+                    <h4 class="media-heading">Crispy Cream <a href="#"><span class="label label-success pull-right">8.9</span></a></h4>
+                    <small>Москва, ул. Никольская, 4/5</small>
+                </div>
+                <div class="media-body addition">
+                    <!--<a href="#s"><span class="label label-success">8.9</span></a> -->
+                    <span class="glyphicon glyphicon-credit-card">  </span> <span class="glyphicon glyphicon-shopping-cart">  </span>
+                    <span class="label label-info"><span class="glyphicon glyphicon-cutlery"></span> ~ <span class="glyphicon glyphicon-gbp"></span>175</span>
+                    <!--<span class="glyphicon glyphicon-time"> </span> 3m-->
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="text-center"><a href="dishes.html">Меню</a></p>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
